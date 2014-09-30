@@ -20,7 +20,7 @@ require_once ('data/modules/blog/functions.php');
 function blog_info() {
 	global $lang;
 	return array(
-		'name'          => $lang['blog']['title'],
+		'name'          => $lang['blog']['title'].' enhancements',
 		'intro'         => $lang['blog']['descr'],
 		'version'       => '0.2',
 		'author'        => $lang['general']['pluck_dev_team'],
