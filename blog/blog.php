@@ -22,7 +22,7 @@ function blog_info() {
 	return array(
 		'name'          => $lang['blog']['title'].' enhancements',
 		'intro'         => $lang['blog']['descr'],
-		'version'       => '0.2',
+		'version'       => '0.2 enhancements',
 		'author'        => $lang['general']['pluck_dev_team'],
 		'website'       => 'http://www.pluck-cms.org',
 		'icon'          => 'images/blog.png',

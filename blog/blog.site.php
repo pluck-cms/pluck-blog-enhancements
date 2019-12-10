@@ -99,9 +99,9 @@ function blog_theme_main($area, $category) {
 						<?php
 						//Check if we need to truncate
 						if (module_get_setting('blog','truncate_posts') != '0')
-							echo truncate($post['content'], module_get_setting('blog','truncate_posts'));
+							echo truncate(htmlspecialchars_decode($post['content']), module_get_setting('blog','truncate_posts'));
 						else
-							echo $post['content'];
+							echo htmlspecialchars_decode($post['content']);
 						?>
 					</div>
 					<?php

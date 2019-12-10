@@ -364,7 +364,7 @@ function blog_page_admin_editpost() {
 			</p>
 			<p>
 				<label class="kop2" for="cont3"><?php echo $lang['general']['contents']; ?></label>
-				<textarea class="<?php if (defined('WYSIWYG_TEXTAREA_CLASS')) echo WYSIWYG_TEXTAREA_CLASS; ?>" name="cont3" id="cont3" cols="70" rows="20"><?php echo htmlspecialchars($post['content']); ?></textarea>
+				<textarea class="<?php if (defined('WYSIWYG_TEXTAREA_CLASS')) echo WYSIWYG_TEXTAREA_CLASS; ?>" name="cont3" id="cont3" cols="70" rows="20"><?php echo htmlspecialchars_decode($post['content']); ?></textarea>
 			</p>
 			<p>
 				<label class="kop2" for="cont6">settings</label> 
